@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 :root {
   // Colors
-  --white: #ffffff;
-  --black: #000000;
-  --blue: #0000ff;
-  --red: #ff0000;
-  --color-primary: var(--black);
-  --color-accent: var(--red);
+  --color-primary: #8C8957;
+  --color-secondary: #656438;
+  --color-muted: #AFAFB4;
+  --color-black: #222222;
+  --color-grey: #C0C0C0;
+  --color-white: #FFFFFF;
 
   // Spaces
   --spacing: 1rem;
@@ -21,7 +21,9 @@
 
   // Sizes
   --size-12: 0.75rem;
+  --size-14: 0.874rem;
   --size-16: 1rem;
+  --size-18: 1.125rem;
   --size-20: 1.25rem;
   --size-24: 1.5rem;
   --size-28: 1.75rem;
@@ -36,9 +38,9 @@
   --heading-1: var(--size-32);
   --heading-2: var(--size-24);
   --heading-3: var(--size-20);
-  --heading-4: var(--size-16);
-  --heading-5: var(--size-14);
-  --heading-6: var(--size-12);
+  --heading-4: var(--size-18);
+  --heading-5: var(--size-16);
+  --heading-6: var(--size-14);
   --paragraph: var(--size-16);
 
   @include media('>tablet') {
