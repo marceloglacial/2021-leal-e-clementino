@@ -1,15 +1,30 @@
 // Base Structure
 // ------------------------------------------------
 
-a {
-  color: var(--blue);
+* {
+    margin: 0;
+    padding: 0;
 
-  &:hover {
-    color: var(--red);
-  }
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--blue);
+
+    &:hover {
+        color: var(--red);
+    }
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
