@@ -20,9 +20,10 @@
 
     &__title {
         position: absolute;
+        margin-left: 6.5rem;
         width: 50%;
         top: 50%;
-        left: 6.5rem;
+        left: 0;
         text-transform: capitalize;
         font-weight: 700;
         letter-spacing: -0.05em;
@@ -75,16 +76,17 @@
     .side-bar {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        justify-content: center;
         position: relative;
+        align-items: center;
+        min-width: 31rem;
+        background-color: var(--color-primary);
 
         &__link {
             display: inline-block;
-            min-width: 210px;
-            margin: 0 5.625rem;
-            transform: translateY(-50%);
+            width: 210px;
+            margin-top: 7.375rem;
         }
+
         &__logo {
             width: 100%;
             height: auto;
@@ -92,7 +94,7 @@
         }
         &__card {
             position: absolute;
-            width: 34.3125rem;
+            width: 496px;
             height: 14.25rem;
             background-color: var(--color-primary);
             bottom: 0;
