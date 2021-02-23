@@ -1,12 +1,35 @@
 // Hero
 
 .hero {
-    display: flex;
     height: 100vh;
     position: relative;
 
-    &__container {
+    &__box-logo {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        width: 34.44444%;
+        height: 560px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-white);
+    }
+
+    &__link {
+        display: inline-block;
+        margin-left: 143px;
+        margin-right: 143px;
+    }
+
+    &__logo {
         width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__container {
+        margin-left: 34.44444%;
         height: 100%;
         position: relative;
     }
@@ -31,53 +54,6 @@
         transform: translateY(-90%);
         text-shadow: 0px 0px 42px rgba(0, 0, 0, 0.25);
         line-height: 60px;
-    }
-
-    .nav {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 15%;
-
-        z-index: 3;
-        background-color: var(--color-white);
-        box-shadow: var(--box-shadow);
-
-        &__list {
-            width: 100%;
-            display: flex;
-            list-style: none;
-            align-items: stretch;
-            justify-content: center;
-        }
-
-        &__item {
-            transition: var(--transition);
-            font-size: var(--size-20);
-            font-weight: 500;
-            color: var(--color-black);
-            text-transform: capitalize;
-
-            padding: 3rem 1.5rem;
-            &:hover {
-                color: var(--color-white);
-                background-color: var(--color-primary);
-            }
-
-            // &:nth-of-type(1) {
-            //     margin-left: 4.75rem;
-            // }
-            // &:nth-of-type(4) {
-            //     margin-right: 4.75rem;
-            // }
-        }
-
-        &__link {
-            display: inline-block;
-            width: 100%;
-            text-decoration: none;
-        }
     }
 
     &__social {
