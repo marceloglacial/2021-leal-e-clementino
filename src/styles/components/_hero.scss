@@ -37,8 +37,9 @@
         display: flex;
         position: absolute;
         bottom: 0;
-        left: 10%;
+        left: 0;
         right: 15%;
+
         z-index: 3;
         background-color: var(--color-white);
         box-shadow: var(--box-shadow);
@@ -63,70 +64,19 @@
                 color: var(--color-white);
                 background-color: var(--color-primary);
             }
+
+            // &:nth-of-type(1) {
+            //     margin-left: 4.75rem;
+            // }
+            // &:nth-of-type(4) {
+            //     margin-right: 4.75rem;
+            // }
         }
 
         &__link {
             display: inline-block;
             width: 100%;
             text-decoration: none;
-        }
-    }
-
-    // Side bar with logo and business card
-    .side-bar {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        align-items: center;
-        min-width: 31rem;
-        background-color: var(--color-primary);
-
-        &__link {
-            display: inline-block;
-            width: 210px;
-            margin-top: 7.375rem;
-        }
-
-        &__logo {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        &__card {
-            position: absolute;
-            width: 496px;
-            height: 14.25rem;
-            background-color: var(--color-primary);
-            bottom: 0;
-            left: 0;
-            z-index: 2;
-        }
-
-        &__list {
-            margin: 65px auto 0 65px;
-        }
-
-        &__item {
-            transition: var(--transition);
-            &:not(:last-child) {
-                margin-bottom: 1.25rem;
-            }
-            &:hover {
-                transform: translateX(5px);
-            }
-        }
-
-        &__info-link {
-            display: flex;
-        }
-
-        &__icon {
-            width: var(--size-20);
-        }
-
-        &__info {
-            color: var(--color-white);
-            margin-left: 13px;
         }
     }
 
@@ -142,7 +92,7 @@
 
         &-link {
             display: block;
-            padding: 2.89rem 4.2rem;
+            padding: 2.89rem 3.75rem;
         }
 
         &-img {

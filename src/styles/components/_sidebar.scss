@@ -1,0 +1,64 @@
+// Side bar with logo and business card
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    min-width: 31rem;
+    width: 31rem;
+    background-color: var(--color-primary);
+    z-index: 1;
+
+    &__box-logo {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-white);
+    }
+
+    &__link {
+        display: inline-block;
+        width: 210px;
+        margin: 7.375rem 8.75rem 9.8125rem;
+    }
+
+    &__logo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &__card {
+        position: absolute;
+        width: 496px;
+        height: 14.25rem;
+        background-color: var(--color-primary);
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &__list {
+        margin: 55px auto 0 55px;
+    }
+
+    &__item {
+        transition: var(--transition);
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+
+    &__info-link {
+        display: flex;
+    }
+
+    &__icon {
+        width: var(--size-20);
+    }
+
+    &__info {
+        color: var(--color-white);
+        margin-left: 13px;
+    }
+}
