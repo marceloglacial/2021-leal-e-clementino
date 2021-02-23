@@ -3,6 +3,10 @@
     height: 100vh;
     position: relative;
 
+    &__header {
+        height: 100%;
+    }
+
     &__container {
         margin-left: 34.44444%;
         height: 100%;
@@ -18,7 +22,7 @@
 
     &__title {
         position: absolute;
-        margin-left: 10%;
+        margin-left: 6%;
         width: 50%;
         top: 50%;
         left: 0;

@@ -1,9 +1,11 @@
 <section class="hero">
-    {{> components/logo bgColor="u-bg-white" width="u-w-33" logoColor="images/logo-green.png"}}
-    <div class="hero__container">
-
-        <img class="hero__img" src="images/hero.jpg" alt="leal e clementino assessoria jurídica imagem de fundo">
-        <h1 class="hero__title">ética </br> sinceridade </br> respeito</h1>
-
-    </div>
+    <header class="hero__header">
+        {{> components/logo bgColor="u-bg-white" width="u-w-33" logoColor="images/logo-green.png"}}
+        <div class="hero__container u-ml-33 ">
+            <img class="hero__img" src="images/hero.jpg" alt="leal e clementino assessoria jurídica imagem de fundo">
+            <h1 class="hero__title">ética </br> sinceridade </br> respeito</h1>
+        </div>
+        {{> components/nav}}
+        {{> components/social-icons}}
+    </header>
 </section>
