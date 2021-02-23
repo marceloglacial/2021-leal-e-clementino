@@ -1,0 +1,19 @@
+.social {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--color-secondary);
+    }
+
+    &__link {
+        display: block;
+        padding: 2.89rem 3.75rem;
+    }
+
+    &__img {
+        width: 1.5rem;
+    }
+}
