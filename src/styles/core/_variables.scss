@@ -15,6 +15,7 @@
     --spacing: 1rem;
     --spacing-double: 2rem;
     --spacing-half: 0.5rem;
+    --spacing-global: 8.5624rem;
 
     // Fonts
     --font-primary: 'Noto Sans', sans-serif;
@@ -48,7 +49,7 @@
 
     @include media('>tablet') {
         --heading-1: var(--big-text);
-        --heading-2: var(--size-32);
+        --heading-2: var(--size-44);
         --heading-3: var(--size-24);
         --heading-4: var(--size-20);
         --heading-5: var(--size-16);

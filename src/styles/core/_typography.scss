@@ -7,10 +7,12 @@ body {
 h1 {
     font-size: var(--heading-1);
     margin: var(--spacing) 0;
+    line-height: 73.55px;
+    font-weight: 600;
 }
 h2 {
     font-size: var(--heading-2);
-    margin: var(--spacing-half) 0;
+    margin: 0 0 1.1875rem 0;
 }
 h3 {
     font-size: var(--heading-3);
@@ -30,4 +32,5 @@ h6 {
 }
 p {
     font-size: var(--paragraph);
+    line-height: 27.26px;
 }
