@@ -41,3 +41,9 @@ li {
 section {
     height: 100vh;
 }
+
+.content {
+    margin-left: var(--offset-1);
+    background-color: var(--color-white);
+    height: 100%;
+}

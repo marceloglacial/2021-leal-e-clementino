@@ -1,18 +1,9 @@
 .contact {
     background-color: var(--color-primary);
 
-    .content {
-        height: 100%;
-    }
-
     &__map {
         height: 100%;
         width: 100%;
         border: none;
     }
-}
-
-.content {
-    margin-left: var(--offset-1);
-    background-color: var(--color-white);
 }
