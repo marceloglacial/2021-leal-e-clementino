@@ -16,15 +16,24 @@ html {
     box-sizing: border-box;
 }
 
-a {
-    color: var(--blue);
-
-    &:hover {
-        color: var(--red);
-    }
+a:visited,
+a:link {
+    color: currentColor;
+    text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+a:link:active,
+a:visited:active {
+    color: currentColor;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
