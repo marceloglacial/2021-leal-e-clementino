@@ -2,7 +2,7 @@
     display: flex;
     position: fixed;
     bottom: 0;
-    left: 34.44444%;
+    left: var(--offset-1);
     right: 10%;
     z-index: 3;
     background-color: var(--color-white);
