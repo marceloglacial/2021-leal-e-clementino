@@ -1,13 +1,13 @@
 .about {
     background-color: var(--color-primary);
-    height: 100vh;
 
     .content {
         height: 100%;
     }
 
     .paragraph {
-        width: 448px;
+        width: 28rem;
+        margin-bottom: var(--spacing);
     }
 }
 
