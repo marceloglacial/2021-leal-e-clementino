@@ -1,5 +1,10 @@
 .whoweare {
     background-color: var(--color-primary);
+    height: 100vh;
+
+    .content {
+        height: 100%;
+    }
 
     .paragraph {
         width: 448px;
