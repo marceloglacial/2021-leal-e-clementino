@@ -7,32 +7,4 @@
     width: var(--offset-1);
     height: 100%;
     justify-content: flex-end;
-
-    &__list {
-        margin-bottom: 4.375rem;
-        margin-left: 4.3125rem;
-    }
-
-    &__item {
-        transition: var(--transition);
-        &:not(:last-child) {
-            margin-bottom: 1.25rem;
-        }
-        &:hover {
-            transform: translateX(5px);
-        }
-    }
-
-    &__info-link {
-        display: flex;
-    }
-
-    &__icon {
-        width: var(--size-20);
-    }
-
-    &__info {
-        color: var(--color-white);
-        margin-left: 13px;
-    }
 }

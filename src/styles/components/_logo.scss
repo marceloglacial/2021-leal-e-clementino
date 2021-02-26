@@ -10,12 +10,8 @@
 
 .logo {
     display: inline-block;
-    margin-left: 143px;
-    margin-right: 143px;
 
     &__img {
-        width: 100%;
-        height: auto;
         object-fit: cover;
     }
 }
