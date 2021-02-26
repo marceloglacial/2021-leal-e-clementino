@@ -1,6 +1,8 @@
 // Smooth scroll control
 // https://dev.to/surjithctly/solved-2020-pure-vanilla-javascript-smooth-scroll-to-element-on-a-click-id-2cek
-let triggers = document.querySelectorAll('.logo[href="#hero"],.nav__item .nav__link[href^="#"]')
+let triggers = document.querySelectorAll(
+    '.address__info-link[href="#contact"], .logo[href="#header"],.nav__item .nav__link[href^="#"]'
+)
 console.log(triggers)
 
 triggers.forEach((trigger) => {
