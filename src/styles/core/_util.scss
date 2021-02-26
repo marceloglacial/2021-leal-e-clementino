@@ -33,19 +33,35 @@
 }
 
 .u-bg-white {
-    background-color: var(--color-white);
+    background-color: var(--color-white) !important;
 }
 
 .u-w-100 {
-    width: 100%;
+    width: 100% !important;
+}
+
+.u-z-index-1000 {
+    z-index: 1000 !important;
+}
+
+.u-z-index-1001 {
+    z-index: 1001 !important;
+}
+
+.u-fixed {
+    position: fixed !important;
+}
+
+.u-absolute {
+    position: absolute !important;
 }
 
 .u-offset-1 {
-    width: var(--offset-1);
+    width: var(--offset-1) !important;
 }
 
 .u-ml-34 {
-    margin-left: var(--offset-1);
+    margin-left: var(--offset-1) !important;
 }
 
 .u-py-global {
