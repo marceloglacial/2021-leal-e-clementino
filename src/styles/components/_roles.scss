@@ -6,10 +6,15 @@
     }
 
     &__item {
-        display: block;
+        display: flex;
+    }
+
+    &__icon {
+        width: 1.5rem;
     }
 
     .paragraph {
         text-transform: capitalize;
+        font-size: var(--size-18);
     }
 }
