@@ -1,20 +1,28 @@
 .roles {
     background-color: var(--color-black);
 
+    .content {
+        @include has-background-stamps;
+    }
+
     &__list {
-        margin-left: var(--spacing-double);
+        margin-top: 5rem;
     }
 
     &__item {
         display: flex;
+        align-items: center;
+        margin-bottom: 1.875rem;
     }
 
     &__icon {
+        margin-left: var(--spacing-half);
         width: 1.5rem;
     }
 
     .paragraph {
         text-transform: capitalize;
         font-size: var(--size-18);
+        margin-left: var(--spacing);
     }
 }
