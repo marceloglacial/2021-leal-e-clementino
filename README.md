@@ -30,12 +30,19 @@ Leal & Clementino - Assessoria Jurídica's website. A static landing page.
 
 ### Development
 
-`yarn start`
+```
+$ yarn start
+```
 
 ### Build
 
-`yarn build`
+```
+$ yarn start
+```
 
-## References
+## Prototype Links
 
-- [Figma Design](https://www.figma.com/proto/d9otPaDYi5hGRlmxyMk5Sl/Leal-and-Clementino-2021?node-id=5%3A1006&viewport=489%2C118%2C0.16155555844306946&scaling=scale-down)
+- [Desktop](https://www.figma.com/proto/d9otPaDYi5hGRlmxyMk5Sl/Leal-and-Clementino-2021?node-id=5%3A1006&viewport=489%2C118%2C0.16155555844306946&scaling=scale-down)
+
+- [Mobile](https://www.figma.com/proto/d9otPaDYi5hGRlmxyMk5Sl/Leal-and-Clementino-2021?node-id=257%3A0&viewport=-93%2C54%2C0.43299582600593567&scaling=scale-down)
+
