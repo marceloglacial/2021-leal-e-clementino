@@ -1,78 +1,10 @@
 .partners {
     background-color: var(--color-secondary);
 
-    &__card {
+    &__wrap {
+        margin-top: 3rem;
         display: flex;
-        margin-top: var(--spacing-double);
-    }
-
-    &__info {
-        margin-left: var(--spacing-double);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__header {
-    }
-
-    &__name {
-        color: var(--color-secondary);
-        text-transform: capitalize;
-    }
-
-    &__partnership {
-        font-weight: 300;
-        text-transform: capitalize;
-    }
-
-    &__contact {
-        color: var(--color-grey);
-    }
-
-    &__link {
-        transition: var(--transition);
-        display: block;
-        line-height: 1.4;
-
-        &:hover {
-            color: var(--color-primary);
-        }
-    }
-
-    &__email {
-        font-weight: 300;
-        display: block;
-    }
-
-    &__phone {
-        font-weight: 300;
-    }
-
-    &__address {
-        margin-right: var(--spacing-double);
-        address {
-            font-style: normal;
-
-            & * {
-                line-height: 1.4;
-            }
-        }
-    }
-
-    span {
-        display: block;
-        text-transform: capitalize;
-    }
-
-    &__photo {
-        overflow: hidden;
-    }
-
-    &__img {
-        transition: var(--transition);
-        &:hover {
-            transform: scale(1.1);
-        }
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 }
