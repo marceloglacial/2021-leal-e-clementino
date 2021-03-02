@@ -16,22 +16,20 @@
     }
 
     &__item {
-        transition: var(--transition);
         font-size: var(--size-20);
         font-weight: 500;
         color: var(--color-black);
         text-transform: capitalize;
-
         padding: 3rem 1.5rem;
-        &:hover {
-            color: var(--color-white);
-            background-color: var(--color-primary);
-        }
+        transition: var(--transition);
     }
 
     &__link {
         display: inline-block;
         width: 100%;
-        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
