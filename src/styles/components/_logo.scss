@@ -5,6 +5,11 @@
     justify-content: center;
     align-items: center;
     width: var(--offset-1);
+
+    @include media('<tablet') {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .logo {
