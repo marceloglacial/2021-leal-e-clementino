@@ -1,33 +1,70 @@
 .outline {
-  outline: solid 1px var(--red);
+    outline: solid 1px var(--red);
 }
 
 .screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  word-wrap: normal !important;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
 }
 
 .screen-reader-text:focus {
-  background-color: var(--black);
-  clip: auto !important;
-  clip-path: none;
-  color: var(--white);
-  display: block;
-  font-size: 1em;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
+    background-color: var(--black);
+    clip: auto !important;
+    clip-path: none;
+    color: var(--white);
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+.u-bg-white {
+    background-color: var(--color-white) !important;
+}
+
+.u-w-100 {
+    width: 100% !important;
+}
+
+.u-z-index-1000 {
+    z-index: 1000 !important;
+}
+
+.u-z-index-1001 {
+    z-index: 1001 !important;
+}
+
+.u-fixed {
+    position: fixed !important;
+}
+
+.u-absolute {
+    position: absolute !important;
+}
+
+.u-offset-1 {
+    width: var(--offset-1) !important;
+}
+
+.u-ml-34 {
+    margin-left: var(--offset-1) !important;
+}
+
+.u-py-global {
+    padding-top: var(--spacing-global) !important;
+    padding-bottom: var(--spacing-global) !important;
 }

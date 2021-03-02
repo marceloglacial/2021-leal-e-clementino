@@ -1,0 +1,9 @@
+.contact {
+    background-color: var(--color-primary);
+
+    &__map {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}

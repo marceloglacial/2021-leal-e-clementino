@@ -1,15 +1,54 @@
 // Base Structure
 // ------------------------------------------------
 
-a {
-  color: var(--blue);
+* {
+    margin: 0;
+    padding: 0;
 
-  &:hover {
-    color: var(--red);
-  }
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a:visited,
+a:link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+    color: currentColor;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    height: 100vh;
+}
+
+.content {
+    margin-left: var(--offset-1);
+    background-color: var(--color-white);
+    height: 100%;
 }

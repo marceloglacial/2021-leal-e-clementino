@@ -1,0 +1,41 @@
+.footer {
+    width: var(--offset-1);
+    height: calc(100% - var(--height-73));
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    justify-content: flex-end;
+}
+
+.address {
+    &__list {
+        margin-bottom: 4.375rem;
+        margin-left: 4.3125rem;
+    }
+
+    &__item {
+        transition: var(--transition);
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+
+    &__info-link {
+        display: flex;
+    }
+
+    &__icon {
+        width: var(--size-20);
+    }
+
+    &__info {
+        color: var(--color-white);
+        margin-left: 13px;
+    }
+}

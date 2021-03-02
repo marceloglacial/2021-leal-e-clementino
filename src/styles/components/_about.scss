@@ -1,0 +1,12 @@
+.about {
+    background-color: var(--color-primary);
+
+    .content {
+        @include has-background-stamps;
+    }
+
+    .paragraph {
+        width: 28rem;
+        margin-bottom: var(--spacing);
+    }
+}

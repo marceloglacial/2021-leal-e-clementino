@@ -1,0 +1,17 @@
+.box-logo {
+    display: flex;
+    top: 0;
+    height: var(--height-73);
+    justify-content: center;
+    align-items: center;
+    width: var(--offset-1);
+}
+
+.logo {
+    display: inline-block;
+    width: 13.125rem;
+
+    &__img {
+        object-fit: cover;
+    }
+}
