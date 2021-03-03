@@ -2,7 +2,14 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media('<desktophd') {
+        bottom: 3%;
+        right: 4%;
+    }
 
     @include media('<tablet') {
         display: flex;
@@ -19,6 +26,10 @@
         height: 100%;
         display: block;
         padding: 2.89rem 3.75rem;
+
+        @include media('<desktophd') {
+            padding: 0;
+        }
 
         @include media('<tablet') {
             margin: 0 auto;

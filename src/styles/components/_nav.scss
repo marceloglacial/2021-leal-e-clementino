@@ -7,12 +7,27 @@
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
 
+    @include media('<tablet') {
+        right: 0;
+        left: 0;
+        overflow-x: scroll;
+    }
+
     &__list {
         width: 100%;
         display: flex;
         list-style: none;
         align-items: stretch;
         justify-content: center;
+
+        @include media('<tablet') {
+            align-items: center;
+        }
+
+        @include media('<600px') {
+            justify-content: flex-start;
+            min-width: 600px;
+        }
     }
 
     &__item {
@@ -22,6 +37,21 @@
         text-transform: capitalize;
         padding: 3rem 1.5rem;
         transition: var(--transition);
+
+        @include media('<desktophd') {
+            padding: 2.5rem 0.8rem;
+        }
+
+        @include media('<desktop') {
+            padding: 1.75rem 0.5rem;
+            font-size: var(--size-16);
+        }
+
+        @include media('<tablet') {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: var(--size-20);
+        }
     }
 
     &__link {
