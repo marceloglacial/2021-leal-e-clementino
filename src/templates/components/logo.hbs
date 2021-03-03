@@ -1,6 +1,10 @@
-<picture class="box-logo {{#if bgColor}} {{bgColor}} {{/if}} {{position}}">
+<div class="logo-wrap {{#if bgColor}} {{bgColor}} {{/if}} {{position}}">
     <a class="logo" href="#header" title="Ir para a página inicial">
-        <img class="logo__img" src={{logoPath}} loading="lazy" width="210" height="150"
-            alt="leal e clementino assessoria jurídica">
+        <picture class="logo__box">
+            <source srcset="images/logo-mobile1x.png" media="(max-width: 374px)" loading="lazy" width="334" height="85">
+            <source srcset="images/logo-mobile2x.png" media="(max-width: 767px)">
+            <img class="logo__img" src={{logoPath}} loading="lazy" width="210" height="150"
+                alt="leal e clementino assessoria jurídica">
+        </picture>
     </a>
-</picture>
+</div>

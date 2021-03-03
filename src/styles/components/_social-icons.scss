@@ -4,13 +4,28 @@
     bottom: 0;
     transition: var(--transition);
 
-    &:hover {
-        background-color: var(--color-secondary);
+    @include media('<tablet') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        width: 20%;
+        height: 18vh;
+        background-color: var(--color-primary);
+        box-shadow: var(--box-shadow-mobile);
     }
 
     &__link {
+        height: 100%;
         display: block;
         padding: 2.89rem 3.75rem;
+
+        @include media('<tablet') {
+            margin: 0 auto;
+            height: auto;
+            display: inline;
+            align-self: flex-start;
+        }
     }
 
     &__img {
