@@ -26,7 +26,7 @@
 
         @include media('<600px') {
             justify-content: flex-start;
-            min-width: 600px;
+            min-width: 622px;
         }
     }
 
@@ -51,6 +51,14 @@
             padding-left: 1rem;
             padding-right: 1rem;
             font-size: var(--size-20);
+
+            &:first-child {
+                padding-left: 1.75rem;
+            }
+
+            &:last-child {
+                padding-left: 1.75rem;
+            }
         }
     }
 
