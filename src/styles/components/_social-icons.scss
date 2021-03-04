@@ -10,7 +10,7 @@
     @include media('<=tablet') {
         right: 0;
         top: 0;
-        width: var(--mobile-width);
+        width: var(--mobile-social-width);
         height: var(--mobile-height);
         display: flex;
         justify-content: center;

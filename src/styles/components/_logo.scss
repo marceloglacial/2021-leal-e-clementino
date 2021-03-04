@@ -7,8 +7,8 @@
     width: var(--offset-1);
 
     @include media('<=tablet') {
-        justify-content: center;
-        width: calc(100% - var(--mobile-height));
+        justify-content: flex-start;
+        width: calc(100% - var(--mobile-social-width));
         height: var(--mobile-height);
         position: fixed !important;
     }
@@ -19,7 +19,7 @@
     display: block;
 
     @include media('<=tablet') {
-        margin: 0.5rem 1rem;
+        height: 100%;
         width: initial;
     }
 
@@ -30,7 +30,12 @@
         align-items: center;
 
         @include media('<=tablet') {
-            max-width: 238px;
+            padding: 1.0875rem 2.9rem;
+            max-width: 20.875rem;
+        }
+
+        @include media('<phone') {
+            padding: 1.0875rem 15%;
         }
     }
 
