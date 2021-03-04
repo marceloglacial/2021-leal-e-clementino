@@ -9,7 +9,7 @@
     left: 0;
     justify-content: flex-end;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
         background-color: var(--color-primary);
         width: 100%;
         height: auto;
@@ -29,7 +29,7 @@
             margin: 2rem;
         }
 
-        @include media('<tablet') {
+        @include media('<=tablet') {
             text-align: center;
         }
     }
@@ -47,7 +47,7 @@
     &__info-link {
         display: flex;
 
-        @include media('<tablet') {
+        @include media('<=tablet') {
         }
     }
 
