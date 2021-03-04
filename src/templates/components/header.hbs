@@ -1,6 +1,8 @@
 <header id="header" class="header">
-    {{> components/logo position="u-fixed" logoPath="images/logo-white.png"}}
-    {{> components/logo bgColor="u-bg-white" position="u-absolute" logoPath="images/logo-primary-x1.png"}}
+    <div class="header__mobile">
+        {{> components/logo position="u-fixed" logoPath="images/logo-white.png"}}
+        {{> components/logo bgColor="u-bg-white" position="u-absolute" logoPath="images/logo-primary-x1.png"}}
+        {{> components/social-icons}}
+    </div>
     {{> components/nav}}
-    {{> components/social-icons}}
 </header>
