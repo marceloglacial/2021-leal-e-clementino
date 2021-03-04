@@ -8,9 +8,8 @@
 
     @include media('<=tablet') {
         justify-content: center;
-        width: calc(100% - 5.625rem);
-        height: 5.625rem;
-        box-shadow: var(--box-shadow-mobile);
+        width: calc(100% - var(--mobile-height));
+        height: var(--mobile-height);
         position: fixed !important;
     }
 }

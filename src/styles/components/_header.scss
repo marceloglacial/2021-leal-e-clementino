@@ -3,4 +3,12 @@
     height: 100vh;
     position: absolute;
     z-index: 999;
+
+    &__mobile {
+        @include media('<=tablet') {
+            width: 100%;
+            height: var(--mobile-height);
+            box-shadow: var(--box-shadow);
+        }
+    }
 }
