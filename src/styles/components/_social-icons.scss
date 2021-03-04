@@ -1,34 +1,22 @@
 .social {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    transition: var(--transition);
+    right: 4%;
+    bottom: 5%;
 
     @include media('<tablet') {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        right: 0;
         top: 0;
-        width: 20%;
-        height: 18vh;
+        width: 5.625rem;
+        height: 5.625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: var(--color-primary);
         box-shadow: var(--box-shadow-mobile);
     }
 
-    &__link {
-        height: 100%;
-        display: block;
-        padding: 2.89rem 3.75rem;
-
-        @include media('<tablet') {
-            margin: 0 auto;
-            height: auto;
-            display: inline;
-            align-self: flex-start;
-        }
-    }
-
-    &__img {
-        width: 1.5rem;
+    &__icon {
+        width: 24px;
+        height: 24px;
     }
 }
