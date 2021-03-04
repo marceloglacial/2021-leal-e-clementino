@@ -8,12 +8,10 @@
 
     @include media('<=tablet') {
         justify-content: center;
-        width: 100%;
-        height: 18vh;
+        width: calc(100% - 5.625rem);
+        height: 5.625rem;
         box-shadow: var(--box-shadow-mobile);
         position: fixed !important;
-        padding-top: 1.0875rem;
-        padding-bottom: 1.0875rem;
     }
 }
 
@@ -22,15 +20,21 @@
     display: block;
 
     @include media('<=tablet') {
-        padding: 1.0875rem 0;
-        width: 80%;
-        max-width: 334px;
+        margin: 0.5rem 1rem;
+        width: initial;
     }
 
     &__box {
         display: block;
         height: 100%;
         width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        @include media('<=tablet') {
+            max-width: 238px;
+        }
     }
 
     &__img {
