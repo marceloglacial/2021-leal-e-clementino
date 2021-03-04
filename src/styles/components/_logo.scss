@@ -6,7 +6,7 @@
     align-items: center;
     width: var(--offset-1);
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
         justify-content: center;
         width: 100%;
         height: 18vh;
@@ -21,7 +21,7 @@
     width: 13.125rem;
     display: block;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
         padding: 1.0875rem 0;
         width: 80%;
         max-width: 334px;

@@ -7,7 +7,7 @@
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
         right: 0;
         left: 0;
         overflow-x: scroll;
@@ -20,11 +20,11 @@
         align-items: stretch;
         justify-content: center;
 
-        @include media('<tablet') {
+        @include media('<=tablet') {
             align-items: center;
         }
 
-        @include media('<600px') {
+        @include media('<612px') {
             justify-content: flex-start;
             min-width: 622px;
         }
@@ -47,7 +47,7 @@
             font-size: var(--size-16);
         }
 
-        @include media('<tablet') {
+        @include media('<=tablet') {
             padding-left: 1rem;
             padding-right: 1rem;
             font-size: var(--size-20);
