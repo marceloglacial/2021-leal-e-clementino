@@ -14,7 +14,7 @@
         width: 100%;
         height: auto;
         position: static;
-        align-items: center;
+        align-items: flex-start;
         z-index: inherit;
         margin-bottom: 4.75rem;
     }
@@ -30,7 +30,9 @@
         }
 
         @include media('<=tablet') {
-            text-align: center;
+            width: 100%;
+            margin: 0;
+            padding: 2rem;
         }
     }
 
@@ -54,10 +56,20 @@
     &__icon {
         width: 1.5rem;
         height: 1.5rem;
+
+        @include media('<=tablet') {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
     }
 
     &__info {
         color: var(--color-white);
         margin-left: 13px;
+
+        @include media('<=tablet') {
+            margin-left: 1rem;
+            font-size: var(--size-18);
+        }
     }
 }
