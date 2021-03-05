@@ -4,11 +4,17 @@
     position: absolute;
     z-index: 999;
 
-    &__mobile {
+    &--mobile {
         @include media('<=tablet') {
-            width: 100%;
             height: var(--mobile-height);
             box-shadow: var(--box-shadow);
+        }
+    }
+
+    &__top {
+        @include media('<=tablet') {
+            width: inherit;
+            height: inherit;
         }
     }
 }
