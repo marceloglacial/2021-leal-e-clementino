@@ -8,12 +8,30 @@
     bottom: 0;
     left: 0;
     justify-content: flex-end;
+
+    @include media('<=tablet') {
+        background-color: var(--color-primary);
+        width: 100%;
+        height: auto;
+        position: static;
+        align-items: center;
+        z-index: inherit;
+        margin-bottom: 4.75rem;
+    }
 }
 
 .address {
     &__list {
         margin-bottom: 4.375rem;
         margin-left: 4.3125rem;
+
+        @include media('<desktophd') {
+            margin: 2rem;
+        }
+
+        @include media('<=tablet') {
+            text-align: center;
+        }
     }
 
     &__item {
@@ -28,10 +46,14 @@
 
     &__info-link {
         display: flex;
+
+        @include media('<=tablet') {
+        }
     }
 
     &__icon {
-        width: var(--size-20);
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     &__info {
