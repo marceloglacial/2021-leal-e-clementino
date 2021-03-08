@@ -47,9 +47,12 @@
     // Custom Typography
     --big-text: 3.125rem; // 3.125rem - 50px
 
-    @include media('>tablet') {
-        --heading-1: var(--big-text);
+    @include media('>=phone') {
         --heading-2: var(--size-44);
+    }
+
+    @include media('>=tablet') {
+        --heading-1: var(--big-text);
         --heading-3: var(--size-24);
         --heading-4: var(--size-20);
         --heading-5: var(--size-16);
