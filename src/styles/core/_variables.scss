@@ -49,6 +49,7 @@
 
     @include media('>=phone') {
         --heading-2: var(--size-44);
+        --paragraph: var(--size-18);
     }
 
     @include media('>=tablet') {
