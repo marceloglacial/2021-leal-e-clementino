@@ -1,14 +1,16 @@
 .header {
     width: 100%;
-    height: 100vh;
+    height: var(--height-73);
     position: absolute;
     z-index: 999;
 
-    &__mobile {
-        @include media('<=tablet') {
-            width: 100%;
-            height: var(--mobile-height);
-            box-shadow: var(--box-shadow);
-        }
+    @include media('<=tablet') {
+        height: var(--mobile-height);
+        box-shadow: var(--box-shadow);
+    }
+
+    &__top {
+        height: inherit;
+        width: inherit;
     }
 }
