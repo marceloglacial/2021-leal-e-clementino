@@ -63,4 +63,15 @@
 .u-py-global {
     padding-top: var(--spacing-global) !important;
     padding-bottom: var(--spacing-global) !important;
+
+    @include media('<=tablet') {
+        padding-top: 7rem !important;
+        padding-bottom: var(--spacing-double) !important;
+    }
+}
+
+.u-mb-4 {
+    @include media('<=tablet') {
+        margin-bottom: 4.1875rem !important;
+    }
 }

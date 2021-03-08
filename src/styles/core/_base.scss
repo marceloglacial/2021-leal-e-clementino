@@ -52,7 +52,7 @@ section {
     background-color: var(--color-white);
     height: 100%;
 
-    @include media('<tablet') {
+    @include media('<=tablet') {
         margin-left: 0;
     }
 }

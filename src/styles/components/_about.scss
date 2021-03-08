@@ -1,5 +1,6 @@
 .about {
     background-color: var(--color-primary);
+    height: auto;
 
     .content {
         @include has-background-stamps;
