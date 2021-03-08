@@ -47,9 +47,13 @@
     // Custom Typography
     --big-text: 3.125rem; // 3.125rem - 50px
 
-    @include media('>tablet') {
-        --heading-1: var(--big-text);
+    @include media('>=phone') {
         --heading-2: var(--size-44);
+        --paragraph: var(--size-18);
+    }
+
+    @include media('>=tablet') {
+        --heading-1: var(--big-text);
         --heading-3: var(--size-24);
         --heading-4: var(--size-20);
         --heading-5: var(--size-16);
@@ -60,9 +64,6 @@
     @include media('>laptophdpi') {
         --heading-1: clamp(3.125rem, -0.7321rem + 4.2857vw, 6.125rem);
     }
-
-    // clamp(3.125rem, 1.8393rem + 2.6786vw, 6.125rem);
-    // clamp(3.125rem, 2.0313rem + 2.2786vw, 7.5rem);
 
     // Transition
     --transition: all 0.25s ease-in-out;

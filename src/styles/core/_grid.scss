@@ -9,6 +9,11 @@
     &--full {
         padding: 0 var(--spacing-global);
         max-width: unset;
+
+        @include media('<desktop') {
+            padding-left: var(--spacing-double);
+            padding-right: var(--spacing-double);
+        }
     }
 }
 .row {

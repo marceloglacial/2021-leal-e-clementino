@@ -51,4 +51,8 @@ section {
     margin-left: var(--offset-1);
     background-color: var(--color-white);
     height: 100%;
+
+    @include media('<=tablet') {
+        margin-left: 0;
+    }
 }
