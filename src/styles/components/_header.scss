@@ -5,6 +5,7 @@
     z-index: 999;
 
     @include media('<=tablet') {
+        position: fixed;
         height: var(--mobile-height);
         box-shadow: var(--box-shadow);
     }
