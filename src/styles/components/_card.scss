@@ -1,18 +1,21 @@
 .card {
     background: url(../images/brand-card.png) right bottom no-repeat;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-    padding: 1.5rem 1rem;
-    width: 393px;
+    padding: var(--spacing-double) 1.5rem;
+    width: 329px;
+    height: 198px;
     margin-bottom: var(--spacing-double);
 
     &:not(:last-child) {
         margin-right: var(--spacing-double);
+
+        @include media('<=tablet') {
+            margin-right: 0;
+        }
     }
 
     @include media('<=iphoneplus') {
-        max-width: 100%;
-        max-height: 198px;
-        padding: var(--spacing-double);
+        width: 100%;
     }
 
     &__wrap {
@@ -29,12 +32,12 @@
 
     &__name {
         margin-top: 0;
-        margin-bottom: 1.25rem;
+        margin-bottom: var(--spacing);
         color: var(--color-primary);
         text-transform: capitalize;
 
-        @include media('<=tablet') {
-            margin-bottom: var(--spacing);
+        @include media('<iphoneplus') {
+            font-size: var(--size-18);
         }
     }
 
@@ -42,6 +45,10 @@
         text-transform: uppercase;
         font-size: var(--size-14);
         color: var(--color-muted);
+
+        @include media('<iphoneplus') {
+            font-size: var(--size-12);
+        }
     }
 
     &__partnership {
@@ -66,10 +73,6 @@
     &__link {
         &:hover {
             color: var(--color-primary);
-        }
-
-        &--phone {
-            margin-bottom: 2.5rem;
         }
     }
 }

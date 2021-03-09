@@ -54,7 +54,7 @@
 
     @include media('>=tablet') {
         --heading-1: var(--big-text);
-        --heading-3: var(--size-24);
+        --heading-3: var(--size-20);
         --heading-4: var(--size-20);
         --heading-5: var(--size-16);
         --heading-6: var(--size-12);
