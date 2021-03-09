@@ -5,6 +5,12 @@
     flex-grow: 1;
     max-width: 346px;
 
+    @include media('<=iphoneplus') {
+        max-width: 100%;
+        max-height: 198px;
+        padding: var(--spacing-double);
+    }
+
     &__wrap {
         display: flex;
         flex-direction: column;
@@ -22,6 +28,10 @@
         margin-bottom: 1.25rem;
         color: var(--color-primary);
         text-transform: capitalize;
+
+        @include media('<=tablet') {
+            margin-bottom: var(--spacing);
+        }
     }
 
     &__oab {
