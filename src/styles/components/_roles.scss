@@ -1,6 +1,5 @@
 .roles {
     background-color: var(--color-black);
-    height: 100vh;
 
     @include media('<=tablet') {
         height: auto;

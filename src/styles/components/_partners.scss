@@ -1,8 +1,7 @@
 .partners {
     background-color: var(--color-secondary);
-    height: 100vh;
 
-    @include media('<=tablet') {
+    @include media('<laptophdpi') {
         height: auto;
     }
 

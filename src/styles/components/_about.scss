@@ -1,6 +1,5 @@
 .about {
     background-color: var(--color-primary);
-    height: 100vh;
 
     @include media('<=tablet') {
         height: auto;
