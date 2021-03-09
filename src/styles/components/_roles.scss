@@ -1,5 +1,6 @@
 .roles {
     background-color: var(--color-black);
+    height: auto;
 
     .content {
         @include has-background-stamps;
@@ -7,17 +8,29 @@
 
     &__list {
         margin-top: 5rem;
+
+        @include media('<=tablet') {
+            margin-top: 2.5rem;
+        }
     }
 
     &__item {
         display: flex;
         align-items: center;
         margin-bottom: 1.875rem;
+
+        @include media('<=tablet') {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__icon {
         margin-left: var(--spacing-half);
         width: 1.5rem;
+
+        @include media('<=tablet') {
+            margin-left: 0;
+        }
     }
 
     .paragraph {
