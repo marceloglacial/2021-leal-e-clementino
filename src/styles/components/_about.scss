@@ -1,6 +1,10 @@
 .about {
     background-color: var(--color-primary);
-    height: auto;
+    height: 100vh;
+
+    @include media('<=tablet') {
+        height: auto;
+    }
 
     .content {
         @include has-background-stamps;

@@ -1,6 +1,10 @@
 .partners {
     background-color: var(--color-secondary);
-    height: auto;
+    height: 100vh;
+
+    @include media('<=tablet') {
+        height: auto;
+    }
 
     &__wrap {
         margin-top: 3rem;
