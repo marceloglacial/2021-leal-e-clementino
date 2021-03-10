@@ -73,7 +73,7 @@
     --box-shadow-mobile: 0px 4px 9px rgba(0, 0, 0, 0.25);
 
     // heights
-    --height-73: 73.444444vh;
+    --height-73: calc(73vh - 10px);
     --mobile-height: 5.625rem;
     --mobile-social-width: var(--mobile-height);
 

@@ -7,7 +7,8 @@
     z-index: 999;
     bottom: 0;
     left: 0;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 
     @include media('<=tablet') {
         background-color: var(--color-primary);
@@ -22,24 +23,17 @@
 
 .address {
     &__list {
-        margin-bottom: 4.375rem;
-        margin-left: 4.3125rem;
-
-        @include media('<desktophd') {
-            margin: 2rem;
-        }
+        padding: 2rem;
 
         @include media('<=tablet') {
             width: 100%;
-            margin: 0;
-            padding: 2rem;
         }
     }
 
     &__item {
         transition: var(--transition);
         &:not(:last-child) {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
         }
         &:hover {
             transform: translateX(5px);
