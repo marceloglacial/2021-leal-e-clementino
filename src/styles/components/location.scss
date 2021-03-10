@@ -2,7 +2,7 @@
     background-color: var(--color-primary);
 
     @include media('<=tablet') {
-        height: 68vh;
+        height: calc(100vh - 20.625rem);
     }
 
     &__map {
