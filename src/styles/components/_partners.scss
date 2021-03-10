@@ -4,6 +4,9 @@
     @include media('<laptophdpi') {
         height: auto;
     }
+    @include media('<=tablet') {
+        margin-bottom: -5rem;
+    }
 
     &__wrap {
         margin-top: 3rem;
