@@ -1,6 +1,10 @@
 .location {
     background-color: var(--color-primary);
 
+    @include media('<=tablet') {
+        height: 68vh;
+    }
+
     &__map {
         height: 100%;
         width: 100%;
