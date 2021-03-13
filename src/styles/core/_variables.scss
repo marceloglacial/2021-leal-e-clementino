@@ -76,6 +76,15 @@
     // heights
     --height-73: calc(73vh - 10px);
     --mobile-height: 5.625rem;
+
+    @include media('<=tablet') {
+        --mobile-height: 5.75rem;
+    }
+    
+    @include media('<=iphoneplus') {
+        --mobile-height: calc(4.875rem);
+    }
+
     --mobile-social-width: var(--mobile-height);
 
     // Offsets
