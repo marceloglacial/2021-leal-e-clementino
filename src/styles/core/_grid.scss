@@ -21,7 +21,7 @@
     width: 100%;
     flex-wrap: wrap;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
         flex-wrap: nowrap;
     }
 
