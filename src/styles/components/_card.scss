@@ -9,7 +9,7 @@
     &:not(:last-child) {
         margin-right: var(--spacing-double);
 
-        @include media('<=tablet') {
+        @include media('<tablet') {
             margin-right: 0;
         }
     }
