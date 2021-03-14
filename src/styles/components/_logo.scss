@@ -23,19 +23,19 @@
         width: initial;
     }
 
-    &__box {
+    &__picture {
         height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
 
         @include media('<=tablet') {
-            padding: 1.0875rem 2.9rem;
+            padding: 1.0875rem var(--spacing-double-half);
             max-width: 20.875rem;
         }
 
-        @include media('<phone') {
-            padding: 1.0875rem 15%;
+        @include media('<=iphoneplus') {
+            padding: 1.0875rem var(--spacing-double);
         }
     }
 

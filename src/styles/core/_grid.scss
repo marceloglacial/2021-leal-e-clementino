@@ -11,6 +11,11 @@
         max-width: unset;
 
         @include media('<desktop') {
+            padding-left: var(--spacing-double-half);
+            padding-right: var(--spacing-double-half);
+        }
+
+        @include media('<=iphoneplus') {
             padding-left: var(--spacing-double);
             padding-right: var(--spacing-double);
         }
