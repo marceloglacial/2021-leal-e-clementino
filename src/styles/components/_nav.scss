@@ -18,15 +18,34 @@
         display: flex;
         list-style: none;
         align-items: stretch;
-        justify-content: center;
+        justify-content: space-around;
+        padding: 3rem;
+
+        @include media('<=desktophd') {
+            justify-content: space-between;
+            padding: 2.5rem;
+        }
+
+        @include media('<=desktop') {
+            padding: 1.75rem;
+        }
+
+        @include media('<=827px') {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
 
         @include media('<=tablet') {
-            align-items: center;
+            padding: 1.875rem 2.5rem;
         }
 
         @include media('<612px') {
-            justify-content: flex-start;
             min-width: 622px;
+        }
+
+        @include media('<=iphoneplus') {
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
     }
 
@@ -35,29 +54,29 @@
         font-weight: 500;
         color: var(--color-black);
         text-transform: capitalize;
-        padding: 3rem 1.5rem;
         transition: var(--transition);
 
-        @include media('<desktophd') {
-            padding: 2.5rem 0.8rem;
+        @include media('<=desktophd') {
+            justify-content: space-between;
+            font-size: var(--size-18);
         }
 
-        @include media('<desktop') {
-            padding: 1.75rem 0.5rem;
+        @include media('<=desktop') {
             font-size: var(--size-16);
         }
 
         @include media('<=tablet') {
-            padding-left: 1rem;
-            padding-right: 1rem;
             font-size: var(--size-20);
+        }
+    }
 
-            &:first-child {
-                padding-left: 1.75rem;
+    &__item {
+        &:not(:last-child) {
+            @include media('<=desktop') {
+                margin-right: 0.5rem;
             }
-
-            &:last-child {
-                padding-left: 1.75rem;
+            @include media('<=tablet') {
+                margin-right: 0;
             }
         }
     }
