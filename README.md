@@ -2,7 +2,10 @@
 
 ## Description
 
-Leal & Clementino - Assessoria Jurídica's website. A static landing page.
+Leal & Clementino - Assessoria Jurídica's Website.
+
+Frontend Development - Static landing page.
+
 
 ## Features
 
@@ -14,11 +17,17 @@ Leal & Clementino - Assessoria Jurídica's website. A static landing page.
 - Optmized Images on build
 - Hot reload on dev
 
+
 ## Stack
 
 - HTML (Handlebars)
 - CSS (SASS)
 - Vanilla Javascript
+
+
+## Live Demo
+
+
 
 ## Installation
 
@@ -26,23 +35,43 @@ Leal & Clementino - Assessoria Jurídica's website. A static landing page.
 2. run `npm install yarn`
 3. run `yarn install`
 
+
 ## How to Use
 
-### Development
+### Start frontend development
 
 ```
 $ yarn start
 ```
 
-### Build
+### Build Project - minify HTML, CSS, JS, and optimize images
 
 ```
-$ yarn start
+$ yarn build
 ```
 
-## Prototype Links
+
+## Designs
+
+### Prototype Links
 
 - [Desktop](https://www.figma.com/proto/d9otPaDYi5hGRlmxyMk5Sl/Leal-and-Clementino-2021?node-id=5%3A1006&viewport=489%2C118%2C0.16155555844306946&scaling=scale-down)
 
 - [Mobile](https://www.figma.com/proto/d9otPaDYi5hGRlmxyMk5Sl/Leal-and-Clementino-2021?node-id=257%3A0&viewport=-93%2C54%2C0.43299582600593567&scaling=scale-down)
 
+
+### Screenshots
+
+#### Phone
+
+![](docs/home-phone.png)
+
+
+#### Tablet
+
+![](docs/home-tablet.png)
+
+
+#### Desktop
+
+![](docs/home-desktop.png)
