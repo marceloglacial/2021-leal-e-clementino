@@ -14,8 +14,11 @@
         flex-wrap: wrap;
 
         @include media('<=tablet') {
-            flex-direction: column;
-            align-items: center;
+            justify-content: space-between;
+        }
+
+        @include media('<754px') {
+            justify-content: center;
         }
     }
 }
