@@ -26,6 +26,10 @@
     width: 100%;
     flex-wrap: wrap;
 
+    @include media('>=576px') {
+        flex-wrap: nowrap;
+    }
+
     .col {
         flex-grow: 1;
         width: 100%;
