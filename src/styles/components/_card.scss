@@ -8,12 +8,17 @@
     margin-bottom: var(--spacing-double);
     margin-right: var(--spacing-double);
 
+    &:nth-child(even) {
+        @include media('<fullhd') {
+            margin-right: 0;
+        }
+    }
+
     @include media('<=tablet') {
         margin-right: var(--spacing-half);
     }
 
     @include media('<=iphoneplus') {
-        margin-right: 0;
         width: 100%;
     }
 
