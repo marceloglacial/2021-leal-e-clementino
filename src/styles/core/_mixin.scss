@@ -1,0 +1,10 @@
+@mixin has-background-stamps {
+    background-image: url('../images/brand2x.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @include media('<=tablet') {
+        background-image: url('../images/brand1x.png');
+        background-position: right 50%;
+    }
+}

@@ -1,0 +1,45 @@
+.logo-wrap {
+    display: flex;
+    top: 0;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    width: var(--offset-1);
+
+    @include media('<=tablet') {
+        justify-content: flex-start;
+        width: calc(100% - var(--mobile-social-width));
+        height: var(--mobile-height);
+        position: fixed !important;
+    }
+}
+
+.logo {
+    width: 13.125rem;
+    display: block;
+
+    @include media('<=tablet') {
+        height: 100%;
+        width: initial;
+    }
+
+    &__picture {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        @include media('<=tablet') {
+            padding: 1.0875rem var(--spacing-double-half);
+            max-width: 20.875rem;
+        }
+
+        @include media('<=iphoneplus') {
+            padding: 1.0875rem var(--spacing-double);
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+}

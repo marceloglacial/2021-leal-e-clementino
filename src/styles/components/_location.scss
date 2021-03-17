@@ -1,0 +1,15 @@
+.location {
+    background-color: var(--color-primary);
+
+    @include media('<=tablet') {
+        background-color: var(--color-white);
+        padding-top: var(--mobile-height);
+        height: calc(100vh - 15rem);
+    }
+
+    &__map {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}

@@ -1,0 +1,25 @@
+.social {
+    position: fixed;
+    right: 4%;
+    bottom: 5%;
+
+    @include media('<=desktop') {
+        bottom: 3%;
+    }
+
+    @include media('<=tablet') {
+        right: 0;
+        top: 0;
+        width: var(--mobile-social-width);
+        height: var(--mobile-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-primary);
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}

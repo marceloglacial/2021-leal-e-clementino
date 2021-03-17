@@ -1,0 +1,90 @@
+.card {
+    background: url(../images/brand-card.png) right bottom no-repeat;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+    padding: var(--spacing-double) 1.5rem;
+    width: 329px;
+    max-width: 344px;
+    min-height: 198px;
+    margin-bottom: var(--spacing-double);
+    margin-right: var(--spacing-double);
+
+    &:nth-child(even) {
+        @include media('<fullhd') {
+            margin-right: 0;
+        }
+    }
+
+    @include media('<=tablet') {
+        margin-right: var(--spacing-half);
+    }
+
+    @include media('<=iphoneplus') {
+        width: 100%;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__name {
+        margin-top: 0;
+        margin-bottom: var(--spacing);
+        color: var(--color-primary);
+        text-transform: capitalize;
+
+        @include media('<iphoneplus') {
+            font-size: var(--size-18);
+        }
+    }
+
+    &__oab {
+        text-transform: uppercase;
+        font-size: var(--size-14);
+        color: var(--color-muted);
+
+        @include media('<iphoneplus') {
+            font-size: var(--size-12);
+        }
+    }
+
+    &__partnership {
+        color: var(--color-primary);
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    &__contact {
+        font-size: var(--size-14);
+        color: var(--color-muted);
+    }
+
+    &__link {
+        font-size: var(--size-14);
+        transition: var(--transition);
+        display: block;
+        line-height: 1.8;
+        font-weight: 400;
+
+        &--email {
+            @include media('<=340px') {
+                width: 55%;
+                word-break: break-all;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    &__link {
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

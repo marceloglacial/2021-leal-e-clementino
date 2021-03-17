@@ -1,27 +1,37 @@
 .container {
-  margin: 0 auto;
-  padding: 0 var(--spacing);
-
-  @include media('>phone') {
-    max-width: var(--desktophd);
-  }
-
-  &--full {
+    margin: 0 auto;
     padding: 0 var(--spacing);
-    max-width: unset;
-  }
+
+    @include media('>phone') {
+        max-width: var(--desktophd);
+    }
+
+    &--full {
+        padding: 0 var(--spacing-global);
+        max-width: unset;
+
+        @include media('<desktop') {
+            padding-left: var(--spacing-double-half);
+            padding-right: var(--spacing-double-half);
+        }
+
+        @include media('<=iphoneplus') {
+            padding-left: var(--spacing-double);
+            padding-right: var(--spacing-double);
+        }
+    }
 }
 .row {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-
-  @include media('>tablet') {
-    flex-wrap: nowrap;
-  }
-
-  .col {
-    flex-grow: 1;
+    display: flex;
     width: 100%;
-  }
+    flex-wrap: wrap;
+
+    @include media('>=576px') {
+        flex-wrap: nowrap;
+    }
+
+    .col {
+        flex-grow: 1;
+        width: 100%;
+    }
 }

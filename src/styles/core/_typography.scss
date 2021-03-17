@@ -1,33 +1,43 @@
 body {
-  font-family: var(--font-primary);
-  font-size: var(--paragraph);
-  color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: var(--paragraph);
+    color: var(--color-black);
 }
 
 h1 {
-  font-size: var(--heading-1);
-  margin: var(--spacing) 0;
+    font-size: var(--heading-1);
+    margin: var(--spacing) 0;
+    font-weight: 600;
 }
 h2 {
-  font-size: var(--heading-2);
-  margin: var(--spacing-half) 0;
+    font-size: var(--heading-2);
+    margin: 0 0 1.1875rem 0;
+    font-weight: 600;
+
+    @include media('<=tablet') {
+        margin-bottom: 2.875rem;
+        text-align: center;
+    }
 }
 h3 {
-  font-size: var(--heading-3);
-  margin: var(--spacing-half) 0;
+    font-size: var(--heading-3);
+    margin: var(--spacing-half) 0;
+    font-weight: 600;
 }
 h4 {
-  font-size: var(--heading-4);
-  margin: var(--spacing-half) 0;
+    font-size: var(--heading-4);
+    margin: var(--spacing-half) 0;
 }
 h5 {
-  font-size: var(--heading-5);
-  margin: var(--spacing-half) 0;
+    font-size: var(--heading-5);
+    margin: var(--spacing-half) 0;
 }
 h6 {
-  font-size: var(--heading-6);
-  margin: var(--spacing-half) 0;
+    font-size: var(--heading-6);
+    margin: var(--spacing-half) 0;
 }
 p {
-  font-size: var(--paragraph);
+    font-size: var(--paragraph);
+    line-height: 27.26px;
+    font-weight: 400;
 }
