@@ -1,6 +1,11 @@
 <section id="hero" class="hero">
     <div class="hero__container">
-        <img class="hero__img" src="images/hero.jpg" alt="leal e clementino assessoria jurídica imagem de fundo">
+        <picture>
+            <source media="(max-width: 576px)" srcset="images/hero@2x.jpg">
+            <source media="(max-width: 768px)" srcset="images/hero@3x.jpg">
+            <source media="(min-width: 769px)" srcset="images/hero@4x.jpg">
+            <img class="hero__img" src="images/hero@1x.jpg" alt="leal e clementino assessoria jurídica imagem de fundo">
+        </picture>
         <div class="overlay">
             <h1 class="hero__title">ética </br> sinceridade </br> respeito</h1>
         </div>

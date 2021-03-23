@@ -63,15 +63,15 @@ $ yarn build
 ### Screenshots
 
 #### Phone
-
+---
 ![](docs/home-phone.png)
 
 
 #### Tablet
-
+---
 ![](docs/home-tablet.png)
 
 
 #### Desktop
-
+---
 ![](docs/home-desktop.png)
