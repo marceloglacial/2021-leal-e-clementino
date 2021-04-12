@@ -23,6 +23,14 @@
         width: initial;
     }
 
+    @include media('>=fullhd') {
+        width: 16.40625rem;
+    }
+
+    @include media('>=full2k') {
+        width: 18.875rem;
+    }
+
     &__picture {
         height: 100%;
         width: 100%;
