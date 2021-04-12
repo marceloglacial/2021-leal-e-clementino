@@ -18,8 +18,19 @@
         background-color: var(--color-primary);
     }
 
+    @include media('>=full2k') {
+        bottom: 4%;
+    }
+
+
+
     &__icon {
         width: 24px;
         height: 24px;
+
+        @include media('>=full2k') {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
