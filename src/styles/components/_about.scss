@@ -10,7 +10,7 @@
     }
 
     .paragraph {
-        width: 28rem;
+        width: 80%;
         margin-bottom: var(--spacing);
 
         @include media('<desktop') {
