@@ -21,6 +21,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 1.875rem;
+        font-size: var(--font-18);
 
         @include media('<=tablet') {
             margin-bottom: 1.5rem;
@@ -38,7 +39,6 @@
 
     .paragraph {
         text-transform: capitalize;
-        font-size: var(--size-18);
         margin-left: var(--spacing);
     }
 }
