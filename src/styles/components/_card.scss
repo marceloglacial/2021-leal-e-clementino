@@ -19,6 +19,12 @@
         }
     }
 
+    &:nth-child(odd) {
+        @include media('<738px') {
+            margin-right: 0;
+        }
+    }
+
     @include media('<=tablet') {
         margin-right: var(--spacing-half);
     }
