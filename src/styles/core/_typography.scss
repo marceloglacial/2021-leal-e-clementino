@@ -40,4 +40,8 @@ p {
     font-size: var(--paragraph);
     line-height: 27.26px;
     font-weight: 400;
+
+    @include media('>=laptophdpi') {
+        line-height: 40px;
+    }
 }

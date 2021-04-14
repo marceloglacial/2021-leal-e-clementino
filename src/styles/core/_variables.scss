@@ -64,6 +64,10 @@
 
     @include media('>laptophdpi') {
         --heading-1: clamp(3.125rem, -0.7321rem + 4.2857vw, 6.125rem);
+        --heading-2: clamp(2.75rem, -0.1429rem + 3.2143vw, 5rem);
+        --paragraph:  clamp(1rem, 0.3571rem + 0.7143vw, 1.5rem);
+        // --font-span: clamp(1rem, -0.1250rem + 1.2500vw, 1.875rem);
+        --font-span: clamp(1rem, 0.0357rem + 1.0714vw, 1.75rem);
     }
 
     // Transition
@@ -80,7 +84,7 @@
     @include media('<=tablet') {
         --mobile-height: 5.75rem;
     }
-    
+
     @include media('<=iphoneplus') {
         --mobile-height: calc(4.875rem);
     }
